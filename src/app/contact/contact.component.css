@@ -1,0 +1,28 @@
+.contact-container{
+    width: 80%;
+    margin-inline: auto;
+    border: 0.3px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.contact-container h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mail{
+    background-color: white;
+    color: #313866;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 340px) {
+    .contact-container{
+        padding: 10px;
+    }
+    .mail{
+        font-size: 14px;
+    }
+}

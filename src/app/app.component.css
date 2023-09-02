@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.portfolio-container{
+    min-height: 100vh;
+    color: white;
+    background-image: linear-gradient(#313866,#504099,#974EC3,#FE7BE5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Rubik', sans-serif;
+}
+.upper-navigation{
+    text-align: right;
+    align-content: center;
+}
+.up-nav-menu{
+    margin-right: 10px;
+    margin-top: 20px;
+    list-style: none;
+}
+.up-nav-menu li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+.up-nav-menu li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+}
+.main-section-container{
+    display: flex;
+    height: 100%;
+}
+footer{
+    padding-block: 15px;
+    text-align: center;
+}
+.left-navigation{
+    border-radius: 30px;
+    background-color: white;
+    padding: 8px;
+    /* padding: 5px; */
+    /* margin-block: auto; */
+}
+.left-navigation-container{
+    /* padding-block: auto; */
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-navigation i{
+    border-radius: 50px;
+    cursor: pointer;
+    color: #313866;
+    display: block;
+    margin-block: 20px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    /* padding: 25px 15px; */
+}
+.left-navigation i:hover{
+    background-color: #313866;
+    color: white;
+}
+.main-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 15px;
+}
+
+/*active styling*/
+.activeup{
+    border-radius: 20px;
+    background-color: white;
+    color: #313866 !important;
+}
+.active{
+    background-color: #313866;
+    color: white !important;
+}
+#checkMenu{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    border: 0.3px solid white;
+    border-radius: 10px;
+}
+.menu-list-container{
+    text-align: center;
+    margin-top: 0px;
+}
+.menu-list-container ul{
+    list-style: none;
+    padding: 0;
+}
+.menu-list-container ul li{
+    margin-block: 50px;
+}
+.menu-list-container ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+}
+.activeup{
+    border-radius: 20px;
+    background-color: white;
+    color: #313866 !important;
+}
+
+@media screen and (max-width: 470px) {
+    .up-nav-menu{
+        display: none;
+    }
+    .main-section-container{
+        margin-block: auto;
+    }
+    .left-navigation-container{
+        display: none;
+    }
+    .menu-icon{
+        display: inline-block;
+        margin-block: 15px;
+        margin-right: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-icon:hover{
+        background-color: white;
+        color: #313866;
+        border: 0.3 px solid #313866;
+    }
+}

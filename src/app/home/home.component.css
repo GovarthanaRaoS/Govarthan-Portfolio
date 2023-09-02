@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.home-container{
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    /* position: relative; */
+    border: 0.3px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    word-spacing: 5px;
+}
+.my-description{
+    /* margin-top: 50px; */
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.name{
+    font-size: 24px;
+    font-weight: bolder;
+}
+#roles{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.just-dev{
+    font-size: 20px;
+}
+.home-container{
+    margin-inline: auto;
+    width: 80%;
+}
+.image-intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-container{
+    order: 2;
+    margin-right: 10px;
+}
+.desc{
+    order: 1;
+    margin: 10px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.image-container img{
+    height: 200px;
+    border-radius: 50%;
+}
+.welcome-message{
+    line-height: 1.6;
+    width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+    .desc{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .desc{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .image-intro{
+        flex-direction: column;
+    }
+    .desc{
+        margin-bottom: 0;
+        margin-top: 20px;
+        order: 2;
+        text-align: center;
+    }
+    .image-container{
+        order: 1;
+    }
+}
+@media screen and (max-width: 300px) {
+    .image-container img{
+        height: 150px;
+    }
+}

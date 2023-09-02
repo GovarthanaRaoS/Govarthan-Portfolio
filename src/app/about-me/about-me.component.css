@@ -1,0 +1,18 @@
+.about-me-container{
+    width: 80%;
+    margin-inline: auto;
+    border: 0.3px solid white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: justify;
+    line-height: 1.6;
+}
+.about-me-container h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 340px) {
+    .about-me-container{
+        padding: 20px;
+    }
+}
