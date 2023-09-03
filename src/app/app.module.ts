@@ -10,6 +10,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { MenuListComponent } from './menu-list/menu-list.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MenuListComponent } from './menu-list/menu-list.component';
     ProjectsComponent,
     AboutMeComponent,
     ContactComponent,
-    MenuListComponent
+    MenuListComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

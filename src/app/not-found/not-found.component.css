@@ -1,0 +1,28 @@
+.not-found-container{
+    width: 80%;
+    margin-inline: auto;
+    border: 0.3px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+.not-found-container h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.error{
+    color: white;
+}
+.error:hover{
+    color: blanchedalmond;
+}
+
+/* @media screen and (max-width: 340px) {
+    .contact-container{
+        padding: 10px;
+    }
+    .mail{
+        font-size: 14px;
+    }
+} */
