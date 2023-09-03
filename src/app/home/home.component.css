@@ -51,7 +51,7 @@
 }
 .welcome-message{
     line-height: 1.6;
-    width: 80%;
+    /* width: 80%; */
 }
 
 @media screen and (max-width: 1000px) {
@@ -80,6 +80,16 @@
         order: 1;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .image-container img{
+        height: 150px;
+    }
+    .welcome-message{
+        text-align: justify;
+    }
+}
+
 @media screen and (max-width: 300px) {
     .image-container img{
         height: 150px;
