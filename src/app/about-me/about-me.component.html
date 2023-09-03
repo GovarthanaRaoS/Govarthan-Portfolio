@@ -5,31 +5,52 @@
             <h3>Objectives</h3>
             <p>A creative and optimistic individual that has the capacity to develop an effective and efficient solution with no tolerance for errors and possess a positive attitude towards individual goals and an organizational goal.</p>
         </div>
-        <div class="brief-into">
+        <!-- <div class="brief-into">
             <h3>Academics:</h3>
             <p>I have completed my higher education in Bachelor of Engineering specializing in Mechanical Engineering in 2019.</p>
+        </div> -->
+        <div class="exp-cards-container">
+            <div class="education-card">
+                <div *ngIf="edu_card===0" class="higher-edu-card">
+                    <h3>Education</h3>
+                    <p>Completed <span class="bold">Bachelor of Engineering</span> specializing in Mechanical Engineering in 2019 with 7.4 CGPA.</p>
+                </div>
+                <div *ngIf="edu_card===1" class="certifications-card">
+                    <h3>Certification</h3>
+                    <p>Six months intensive training in <span class="bold">Java Full Stack Development</span> by Kodnest Technologies covering Angular, HTML, CSS, JS, Java, Spring Boot, MySQL and Oracle SQL</p>
+                </div>
+                <button class="prevNextButt" (click)="handleEduPrev()"><</button>
+                <button class="prevNextButt" (click)="handleEduNext()">></button>
+            </div>
+            <div class="work-experience-card">
+                <div *ngIf="work_card===0" class="training-card">
+                    <h3>Intensive training</h3>
+                    <p>Completed six months intensive training in <span class="bold">Java Full Stack Development</span> in Kodnest Technologies</p>
+                </div>
+                <div *ngIf="work_card===1" class="apa-card">
+                    <h3>Design Engineer</h3>
+                    <p>Worked as <span class="bold">Design Engineer</span> for APA Engineering Pvt Ltd for 1.5 years specializing in aluminium extrusion tool design, 3D Modeling, assembly and 2D drafting</p>
+                </div>
+                <div *ngIf="work_card===2" class="ksr-card">
+                    <h3>Design Engineer</h3>
+                    <p>Worked as <span class="bold">Design Engineer</span> for KSR Technologies for 8 months on R&D, developing 3D Models for 3D printing, sheet metal modeling and 2D drafting for a Dishwasher prototype.</p>
+                </div>
+                <button class="prevNextButt" (click)="handlePrevious()"><</button>
+                <button class="prevNextButt" (click)="handleNext()">></button>
+            </div>
+            <div class="skillset-container">
+                <div *ngIf="skill_card==0" class="coding-skills-card">
+                    <h3>Technologies Known</h3>
+                    <p>I specialize in HTML, CSS, JS, React, Angular, Nodejs with Express, Spring Boot, Typescript, MySQL and Oracle SQL</p>
+                </div>
+                <div *ngIf="skill_card==1" class="mechanical-skills-card">
+                    <h3>Software Tools known</h3>
+                    <p>Solidworks, AutoCAD, CATIA, Creo, Creo 2D, AnSYS, CFD</p>
+                </div>
+                <button class="prevNextButt" (click)="handleSkillPrev()"><</button>
+                <button class="prevNextButt" (click)="handleSkillNext()">></button>
+            </div>
         </div>
-        <div class="work-container">
-            <h3>Professional Experience</h3>
-            <h4 class="department">Mechanical Experience</h4>
-            <div class="work-card-container">
-                <h4>Design Engineer - APA Engineering Pvt Ltd - 1.5 years</h4>
-                <p>Worked on Aluminium extrusion tool design, 3D modelling and assembling components for 1.5 years</p>        
-            </div>
-            <div class="work-card-container">
-                <h4>Design Engineer - KSR Technologies - 8 months</h4>
-                <p>Worked on R&D for a dishwasher prototype, making 3D model prototypes for 3D printing, sheet metal design and 2D drafting</p>       
-            </div>
-            <h4 class="department">Coding Training</h4>
-            <div class="work-card-container">
-                <h4>Intensive Training - Kodnest Technologies - 6 months</h4>
-                <p>Went through 6 months intensive training for Java Full Stack development at Kodnest Technologies</p>         
-            </div>
-            <div class="skills-container">
-                <h4>Skillsets:</h4>
-                <p>HTML, CSS, JS, React js, Angular, Node js, Express, Springboot, Java, Python, MySQL and Oracle SQL</p>
-            </div>
-        </div>
-        I worked for more than two years in Mechanical industries dealing with foreign clients, handling projects, which greatly helped in improving my communication skills and working with a team. Throughout my academics and career, I have maintained my interest and kept learning coding languages. I was always fascinated by working with coding languages and went through an six month intensive training for Java Full Stack Development. I specialize in React, Angular, Node js, Springboot, Java, Python, Css, JS and MySQL. Through the knowledge gained through the intensive training and self-learing, I was able to develop two projects, Techie a full stack quiz app built using React, CSS, Nodejs with Express and MySQL and the very thing you are viewing, the portfolio site is built using Angular, CSS and Typescript. I'm always eager to learn new technologies and work with like minded individuals.
+        <p class="leaving-paragraph">Through the knowledge gained through the intensive training and self-learing, I was able to develop two projects, Techie a full stack quiz app built using React, CSS, Nodejs with Express and MySQL and the very thing you are viewing, the portfolio site is built using Angular, CSS and Typescript. I'm always eager to learn new technologies and work with like minded individuals.</p>
     </div>
 </div>

@@ -48,6 +48,11 @@
 /* .card-container h3, .card-container p{
     margin-block: 10px;
 } */
+@media screen and (max-width: 650px) {
+    .projects-container{
+        text-align: justify;
+    }
+}
 @media screen and (max-width: 470px) {
     .projects-container{
         text-align: justify;
