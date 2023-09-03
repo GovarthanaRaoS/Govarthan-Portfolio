@@ -18,6 +18,13 @@
     padding-left: 10px;
     border-radius: 20px;
 }
+.linkedin{
+    text-decoration: underline;
+    color: white;
+}
+.linkedin:hover{
+    color: #313866;
+}
 @media screen and (max-width: 340px) {
     .contact-container{
         padding: 10px;
