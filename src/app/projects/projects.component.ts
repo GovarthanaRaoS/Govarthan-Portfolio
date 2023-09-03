@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,12 +9,12 @@ import { Router } from '@angular/router';
 })
 export class ProjectsComponent {
 
-  constructor(private router: Router){
+  constructor(private router: Router, @Inject(DOCUMENT) private document: Document){
 
   }
 
   handleTechie(){
-    this.router.navigateByUrl('https://techie-webapp.onrender.com');
+    this.document.location.href = 'https://techie-webapp.onrender.com';
   }
 
   handlePortfolio(){

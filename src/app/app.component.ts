@@ -30,6 +30,12 @@ export class AppComponent implements OnInit {
     }
   }
 
+  @HostListener('window:popstate', ['$event'])
+  onPopState(event:any) {
+    this.isChecked = false;
+    console.log('Back button pressed');
+  }
+
   handleClick(){
     this.isChecked = false;
   }

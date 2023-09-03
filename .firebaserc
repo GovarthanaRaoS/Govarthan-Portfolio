@@ -1,6 +1,7 @@
 {
   "projects": {
-    "govarthan-port": "govarthan-portfolio"
+    "govarthan-port": "govarthan-portfolio",
+    "govarthan-portfolio": "govarthan-portfolio"
   },
   "targets": {},
   "etags": {}
